@@ -18,7 +18,7 @@ class CreateEnderecosTable extends Migration
             $table->string('logradouro', 100);
             $table->string('numero', 10)->default('SN');
             $table->string('complemento', 100)->nullable();
-            $table->string('bairro', 100);
+            // $table->string('bairro', 100);
             $table->string('cidade', 100);
             $table->string('estado', 100);
             $table->unsignedBigInteger('pessoa_id');

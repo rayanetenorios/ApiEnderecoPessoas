@@ -19,6 +19,6 @@ class Estado extends Model
 
     public function endereco() 
     {
-        return $this->hasMany(Endereco::class);
+        return $this->belongsToMany(Endereco::class);
     }
 }

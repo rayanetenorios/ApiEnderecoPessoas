@@ -35,7 +35,7 @@ Route::namespace('Api')->group(function () {
         // Route::resource('/', 'EnderecoController');
         Route::get('/', 'EnderecoController@index');
         Route::get('/{id}', 'EnderecoController@show');
-        Route::post('/', 'EnderecoController@save');
+        Route::post('/', 'EnderecoController@store');
         Route::put('/', 'EnderecoController@update');
         Route::patch('/', 'EnderecoController@update');
         Route::delete('/{id}', 'EnderecoController@delete');

@@ -64,10 +64,10 @@ class EnderecoController extends Controller
         {
             $endereco = $this->endereco->create($data);
 
-            if(isset($data['estado_id']) && count($data['estado_id'])) 
-            {
-                $endereco->estados()->sync($data['estado_id']);
-            }
+            // if(isset($data['estado_id'])) 
+            // {
+            //     $endereco->estados()->sync($data['estado_id']);
+            // }
 
             return response()->json([
                 'data' => ['msg' => 'Endereço cadastrado com sucesso!']

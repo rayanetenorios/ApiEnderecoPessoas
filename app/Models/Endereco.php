@@ -21,11 +21,11 @@ class Endereco extends Model
 
     public function pessoa() 
     {
-        return $this->belongsTo(Pessoa::class);
+        return $this->belongsToMany(Pessoa::class);
     }
 
-    public function estado() 
+    public function estados() 
     {
-        return $this->belongsTo(Estado::class);
+        return $this->hasMany(Estado::class);
     }
 }

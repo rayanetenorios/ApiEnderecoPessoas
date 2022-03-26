@@ -14,7 +14,7 @@ $factory->define(Endereco::class, function (Faker $faker) {
         'complemento' => $faker->secondaryAddress,                    
         // 'bairro' => $faker->citySuffix,
         'cidade' => $faker->city,
-        'estado' => $faker->stateAbbr,
+        'estado_id' => random_int(1, 27),
         'pessoa_id' => random_int(1, 10),
     ];
 });

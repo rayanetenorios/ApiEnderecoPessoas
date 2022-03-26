@@ -15,7 +15,17 @@ class Endereco extends Model
         'complemento',
         'bairro',
         'cidade',
-        'estado',
+        'estado_id',
         'pessoa_id'
     ];
+
+    public function pessoa() 
+    {
+        return $this->belongsTo(Pessoa::class);
+    }
+
+    public function estado() 
+    {
+        return $this->belongsTo(Estado::class);
+    }
 }

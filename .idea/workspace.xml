@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff5c6703-8064-4487-851d-f326d9ff488a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/EnderecoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/EnderecoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/PessoaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/PessoaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Pessoa.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Endereco.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Endereco.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/EnderecoFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/EnderecoFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2022_03_23_151854_create_enderecos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2022_03_23_151854_create_enderecos_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/EnderecoSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/EnderecoSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,6 +165,7 @@
       <updated>1648045208886</updated>
       <workItem from="1648045211706" duration="12128000" />
       <workItem from="1648225394898" duration="272000" />
+      <workItem from="1648235634066" duration="105000" />
     </task>
     <servers />
   </component>

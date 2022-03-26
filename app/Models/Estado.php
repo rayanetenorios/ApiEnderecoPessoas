@@ -4,17 +4,20 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Pessoa extends Model
+class Estado extends Model
 {
-    protected $table = 'pessoas';
+    protected $table = 'estados';
 
     protected $fillable =
     [
         'nome',
-        'data_nascimento'
+        'uf',
+        'slug'
     ];
 
-    public function pessoa() 
+    public $timestamps = false;
+
+    public function endereco() 
     {
         return $this->hasMany(Endereco::class);
     }

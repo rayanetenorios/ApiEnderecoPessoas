@@ -22,16 +22,23 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::namespace('Api')->group(function () {
     // Rotas Pessoas
     Route::prefix('pessoas')->group(function () {
+        // Route::resource('/', 'PessoaController');
         Route::get('/', 'PessoaController@index');
         Route::get('/{id}', 'PessoaController@show');
-        Route::post('/', 'PessoaController@save');
+        Route::post('/', 'PessoaController@store');
         Route::put('/', 'PessoaController@update');
         Route::patch('/', 'PessoaController@update');
         Route::delete('/{id}', 'PessoaController@delete');
     });
 
     Route::prefix('enderecos')->group(function () {
+        // Route::resource('/', 'EnderecoController');
         Route::get('/', 'EnderecoController@index');
+        Route::get('/{id}', 'EnderecoController@show');
+        Route::post('/', 'EnderecoController@save');
+        Route::put('/', 'EnderecoController@update');
+        Route::patch('/', 'EnderecoController@update');
+        Route::delete('/{id}', 'EnderecoController@delete');
     });
 });
 

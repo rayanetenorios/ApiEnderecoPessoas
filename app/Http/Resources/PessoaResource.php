@@ -2,15 +2,14 @@
 
 namespace App\Http\Resources;
 
-use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class Pessoa extends JsonResource
+class PessoaResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
      *
-     * @param  Request  $request
+     * @param  \Illuminate\Http\Request  $request
      * @return array
      */
     public function toArray($request)
@@ -19,5 +18,7 @@ class Pessoa extends JsonResource
             'nome' => $this->nome,
             'data_nascimento' => $this->data_nascimento,
         ];
+
+        // return parent::toArray($request);
     }
 }

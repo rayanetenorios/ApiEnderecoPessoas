@@ -17,8 +17,8 @@ class Estado extends Model
 
     public $timestamps = false;
 
-    public function endereco() 
+    public function endereco()
     {
-        return $this->belongsToMany(Endereco::class);
+        return $this->hasMany(Endereco::class, 'estado_id', 'id');
     }
 }

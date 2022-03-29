@@ -14,8 +14,8 @@ class Pessoa extends Model
         'data_nascimento'
     ];
 
-    public function endereco() 
+    public function endereco()
     {
-        return $this->hasMany(Endereco::class);
+        return $this->hasMany(Endereco::class, 'pessoa_id', 'id');
     }
 }
